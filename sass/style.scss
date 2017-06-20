@@ -5,7 +5,22 @@
  Version:      0.1
 */
 
+/*--------------------
+>>> TABLE OF CONTENTS:
+----------------------
+1.0 Normalize
+2.0 Typography
+3.0 Icons
+4.0 Components
+--------------------*/
+
+/*----- 1.0 Colors -----*/
+@import 'colors';
+
+/*----- 2.0 Menus -----*/
+@import 'menus';
+
 body {
-  color: #333;
-  background-color: #222;
+  color: red;
+  background-color: khaki;
 }

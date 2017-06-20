@@ -4,3 +4,16 @@
  Template:     generatepress
  Version:      0.1
 */
+/*--------------------
+>>> TABLE OF CONTENTS:
+----------------------
+1.0 Normalize
+2.0 Typography
+3.0 Icons
+4.0 Components
+--------------------*/
+/*----- 1.0 Colors -----*/
+/*----- 2.0 Menus -----*/
+body {
+  color: red;
+  background-color: khaki; }
