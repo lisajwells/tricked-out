@@ -18,6 +18,8 @@
   "homepage": "https://github.com/lisajwells/tricked-out#readme",
   "devDependencies": {
     "es6-promise": "^4.1.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
   }
 }
