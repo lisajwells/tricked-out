@@ -1,0 +1,23 @@
+{
+  "name": "tricked-out",
+  "version": "1.0.0",
+  "description": "A GeneratePress child theme for trickedoutimages.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisajwells/tricked-out.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisajwells/tricked-out/issues"
+  },
+  "homepage": "https://github.com/lisajwells/tricked-out#readme",
+  "devDependencies": {
+    "es6-promise": "^4.1.0",
+    "gulp": "^3.9.1"
+  }
+}
