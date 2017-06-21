@@ -27,6 +27,23 @@
 	clear: both;
 }
 
+@mixin linx ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+// @include linx($colorBrightOne, $colorBrightOne, $colorBrightOne, $colorBrightOne);
+
+
 @mixin breakpoint($point) {
    @if $point == desktop {
      @media (min-width: 70em) { @content ; } // 1120
