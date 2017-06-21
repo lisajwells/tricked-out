@@ -28,7 +28,7 @@ gulp.task('sass', function() {
   .pipe(sourcemaps.init())
   .pipe(plumber({ errorHandler: onError }))
   .pipe(sass())
-  .pipe(autoprefixer('> 2%, last 2 versions, Firefox ESR, Opera 12.1'))
+  .pipe(autoprefixer())
   .pipe(sass().on('error', sass.logError))
   .pipe(sourcemaps.write())
 

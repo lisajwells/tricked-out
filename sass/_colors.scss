@@ -1,0 +1,38 @@
+$colorBlack: #000;
+$colorBlackAlmost: #222;
+$colorBrightOne: #FF652F;
+$colorBrightOne-lighter: lighten($colorBrightOne, 20%);
+$colorBrightTwo: #FFE401;
+$colorBrightTwo-lighter: lighten($colorBrightTwo, 20%);
+$colorBrightThree: #13A76B;
+$colorBrightThree-lighter: lighten($colorBrightThree, 20%);
+$colorWhite: #fff;
+$colorGray: #747474;
+
+$color__background-header: $colorBlack;
+$color__background-body: $colorBlackAlmost;
+$color__text-main: $colorBrightTwo;
+$color__text-bright: $colorBrightOne;
+$color__background-footer: $colorBlack;
+
+
+// link in text
+$color__link: $color__text-bright;
+$color__link-visited: $color__text-bright;
+$color__link-hover: $colorBrightThree;
+
+// link in menu
+$color__menu-link: $color__text-bright;
+$color__menu-link-hover: $colorBrightTwo;
+$color__menu-link-focus: $colorBrightTwo;
+
+// buttons
+$color__text-button: $colorBlackAlmost;
+$color__text-button-hover: $colorBlackAlmost;
+$color__text-button-focus: $colorBlackAlmost;
+$color__background-button: $colorBrightOne;
+$color__background-button-hover: $colorBrightOne-lighter;
+$color__background-button-focus: $colorBrightOne-lighter;
+$color__border-button: $colorBrightTwo;
+$color__border-button-hover: $colorBrightThree;
+$color__border-button-focus: $colorBrightThree;
