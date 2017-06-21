@@ -26,10 +26,16 @@ body {
 }
 
 /****** HEADER ******/
+
+#masthead {
+    z-index: 9999;
+}
+
 .inside-header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding: 24px 40px;
 }
 
 .site-branding {
