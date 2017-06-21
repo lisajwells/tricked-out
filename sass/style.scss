@@ -8,19 +8,28 @@
 /*--------------------
 >>> TABLE OF CONTENTS:
 ----------------------
-1.0 Normalize
-2.0 Typography
-3.0 Icons
-4.0 Components
+
+HEADER
+
+
 --------------------*/
 
-/*----- 1.0 Colors -----*/
+@import 'mixins-master';
+@import 'typography';
 @import 'colors';
+@import 'menus';
 
-/*----- 2.0 Menus -----*/
-// @import 'menus';
 
 body {
-  color: brown;
-  background-color: khaki;
+  color: $color__text-main;
+  background-color: $color__background-body;
+}
+
+/****** HEADER ******/
+.inside-header {
+    display: flex;
+}
+
+.site-logo {
+    max-width: 180px;
 }
