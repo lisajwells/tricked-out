@@ -9,6 +9,13 @@ var gutil = require('gulp-util');
 // for live refresh on changes
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
+// sourcemaps
+var sourcemaps = require('gulp-sourcemaps');
+
+// var sassOptions = {
+//   errLogToConsole: true,
+//   outputStyle: 'expanded'
+// };
 
 var onError = function (err) {
   console.log('An error occurred:', gutil.colors.magenta(err.message));
@@ -18,9 +25,13 @@ var onError = function (err) {
 
 gulp.task('sass', function() {
   return gulp.src('./sass/**/*.scss')
+  .pipe(sourcemaps.init())
   .pipe(plumber({ errorHandler: onError }))
   .pipe(sass())
-  .pipe(autoprefixer())
+  .pipe(autoprefixer('> 2%, last 2 versions, Firefox ESR, Opera 12.1'))
+  .pipe(sass().on('error', sass.logError))
+  .pipe(sourcemaps.write())
+
   .pipe(gulp.dest('./'))
 });
 
