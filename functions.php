@@ -38,7 +38,11 @@ function trick_custom_color_palettes( $palettes ) {
 
 // add portrait image to front page
 function trick_front_add_bkgd_img() {
+
+    if ( is_front_page() ) {
+
     echo '<div class="front-page-portrait"><img src="http://tricked-out-images.dev/wp-content/uploads/2017/06/Himself-try-again-vignette.jpg"></div>';
+    }
 };
 add_action('generate_after_header', 'trick_front_add_bkgd_img');
 ?>

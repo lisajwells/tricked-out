@@ -82,3 +82,11 @@ body {
     border-right: none;
 }
 
+.front-page-portrait {
+  position: absolute;
+    top: 222px;
+    left: -40px;
+    z-index: -1;
+    max-height: 100vh;
+}
+
