@@ -19,11 +19,6 @@ function trick_add_system_fonts( $fonts ) {
     return $fonts;
 }
 
-// font-family: 'Lato', sans-serif;
-// // regular 400
-// font-family: 'Palanquin Dark', sans-serif;
-// // regular 400, semi-bold 600
-
 // customize the customizer palettes
 add_filter( 'generate_default_color_palettes', 'trick_custom_color_palettes' );
 function trick_custom_color_palettes( $palettes ) {
@@ -41,12 +36,9 @@ function trick_custom_color_palettes( $palettes ) {
     return $palettes;
 }
 
-/*
- * Add Logo support
- */
-// add_theme_support( 'custom-logo', array(
-//     'height' => 250,
-//     'width' => 276,
-//     'flex-height' => true,
-//     'flex-width' => true,
-// ) );
+// add portrait image to front page
+function trick_front_add_bkgd_img() {
+    echo '<div class="front-page-portrait"><img src="http://tricked-out-images.dev/wp-content/uploads/2017/06/Himself-try-again-vignette.jpg"></div>';
+};
+add_action('generate_after_header', 'trick_front_add_bkgd_img');
+?>

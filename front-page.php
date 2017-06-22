@@ -2,21 +2,13 @@
 /**
  * The template for displaying the front page.
  *
+ * @package GeneratePress
  */
 
 // No direct access, please
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 get_header(); ?>
-
-<!-- generate_before_main_content -->
-
-<?php
-function trick_front_add_bkgd_img() {
-echo '<div class="custom-text">doyou</div>';
-};
-add_action('generate_before_page_header', 'trick_front_add_bkgd_img');
-?>
 
 	<div id="primary" <?php generate_content_class();?>>
 		<main id="main" <?php generate_main_class(); ?>>
