@@ -51,15 +51,15 @@ body {
 // }
 
 .main-title {
-    font-size: 40px;
+    @include font-size(36);
 }
 
 .site-description {
-    font-size: 29px;
+    @include font-size(27);
 }
 
 .site-logo {
-    max-width: 180px;
+    max-width: 160px;
     margin: 0 2em;
     flex: 1 0 20%;
 }
@@ -71,7 +71,14 @@ body {
 
 }
 
-.main-navigation a, .menu-toggle {
+.main-navigation .main-nav ul li a {
     font-family: 'Palanquin', sans-serif;
+    @include font-size(20);
     font-weight: 300;
+    border-right: $colorBrightOne solid 1px;
+        line-height: 28px;
 }
+.main-navigation .main-nav li:last-child a {
+    border-right: none;
+}
+
