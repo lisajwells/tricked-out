@@ -40,7 +40,6 @@ function trick_custom_color_palettes( $palettes ) {
 function trick_front_add_bkgd_img() {
 
     if ( is_front_page() ) {
-
         echo '<div class="front-page-portrait"><img src="'.get_home_url().'/wp-content/uploads/2017/06/Himself-try-again-vignette.jpg"></div>';
     }
 };

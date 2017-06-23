@@ -82,13 +82,33 @@ body {
 
 /****** FRONT-PAGE ******/
 
+/* fallback for browsers that don't support sticky */
 .front-page-portrait {
-  position: absolute;
-    top: 222px;
-    left: -40px;
-    z-index: -1;
-    max-height: 100vh;
+  position: relative;
+  top: -3px;
+  z-index: -1;
+  max-height: 10px;
+
+  img {
+    max-height: calc(105vh - 193px);
+  }
 }
+
+/* NOTE: @supports has to be at the root, not nested */
+@supports(position:sticky){
+  .front-page-portrait {
+    position: sticky;
+    top: -3px;
+    z-index: -1;
+    max-height: 10px;
+
+    img {
+      max-height: calc(105vh - 193px);
+    }
+  }
+}
+
+
 
 /****** ALL PAGES ******/
 
