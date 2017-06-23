@@ -107,15 +107,29 @@ body {
   }
 }
 
+.home #main {
+    width: 70%;
+    position: relative;
+    float: right;
+}
+
 blockquote {
   @include display-regular;
   color: $colorBrightTwo;
   text-align: right;
+  padding-top: 0;
 
   cite {
     font-family: $font__text;
     font-style: normal;
   }
+}
+
+/* Galleries */
+#envira-gallery-186 .envira-album-title {
+  font-family: $font__display;
+  font-weight: 400;
+  color: $colorBrightThree;
 }
 
 
