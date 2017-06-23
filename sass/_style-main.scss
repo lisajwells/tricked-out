@@ -129,13 +129,18 @@ blockquote {
     background-color: $colorBlack !important;
 }
 
-#envira-gallery-186 .envirabox-skin.envirabox-theme-captioned .envirabox-title-float-wrap span.child {
-    background: #000;
-    color: #FF652F;
+.envirabox-skin.envirabox-theme-captioned .envirabox-title-float-wrap span.child {
+    background: #000 !important;
+    color: #FF652F !important;
     font-family: "Palanquin",sans-serif;
     font-weight: 300;
     @include font-size(21);
 }
+
+.envirabox-nav span {
+    visibility: visible !important;
+}
+
 
 
 /****** ALL PAGES ******/
