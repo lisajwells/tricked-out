@@ -65,15 +65,15 @@ body {
     float: none;
     margin: 0;
     flex: 1 0;
-    margin-left: -20px;
+    margin-left: -38px;
 }
 
 .main-navigation .main-nav ul li a {
     font-family: 'Palanquin', sans-serif;
-    @include font-size(20);
+    @include font-size(16);
     font-weight: 300;
     border-right: $colorBrightOne solid 1px;
-        line-height: 28px;
+    line-height: 1;
 }
 .main-navigation .main-nav li:last-child a {
     border-right: none;
@@ -107,6 +107,16 @@ body {
   }
 }
 
+blockquote {
+  @include display-regular;
+  color: $colorBrightTwo;
+  text-align: right;
+
+  cite {
+    font-family: $font__text;
+    font-style: normal;
+  }
+}
 
 
 /****** ALL PAGES ******/

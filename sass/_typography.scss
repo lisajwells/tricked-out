@@ -4,7 +4,7 @@
 // // regular 400, semi-bold 600
 
 $font__display: "Palanquin Dark",sans-serif;
-$font__text: "Lato",sans-serif;
+$font__text: "Palanquin",sans-serif;
 
 @mixin display-semi {
   font-family: $font__display;
@@ -12,6 +12,7 @@ $font__text: "Lato",sans-serif;
 }
 @mixin display-regular {
   font-family: $font__display;
+  font-style: normal;
   font-weight: 400;
 }
 

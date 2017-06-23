@@ -7,7 +7,7 @@
 
 function trick_add_google_fonts() {
 
-wp_enqueue_style( 'trick-google-fonts', 'http://fonts.googleapis.com/css?family=Palanquin+Dark:400,600|Lato:400|Palanquin:300,400', false );
+wp_enqueue_style( 'trick-google-fonts', 'http://fonts.googleapis.com/css?family=Palanquin+Dark:400,600|Palanquin:300', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'trick_add_google_fonts' );
