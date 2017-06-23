@@ -89,7 +89,8 @@ body {
   max-height: 10px;
 
   img {
-    max-height: calc(105vh - 193px);
+      width: 40%;
+    // max-height: calc(105vh - 193px);
   }
 }
 
@@ -102,13 +103,14 @@ body {
     max-height: 10px;
 
     img {
-      max-height: calc(105vh - 193px);
+      width: 40%;
+      // max-height: calc(105vh - 193px);
     }
   }
 }
 
 .home #main {
-    width: 70%;
+    width: 80%;
     position: relative;
     float: right;
 }
@@ -132,6 +134,11 @@ blockquote {
   font-family: $font__display;
   font-weight: 400;
   color: $colorBrightThree;
+}
+
+.envirabox-overlay {
+    background-image: none !important;
+    background-color: $colorBlack !important;
 }
 
 
