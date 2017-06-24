@@ -6,16 +6,22 @@
  */
 
 function trick_add_google_fonts() {
-
-wp_enqueue_style( 'trick-google-fonts', 'https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600|Palanquin:300', false );
+    wp_enqueue_style( 'trick-google-fonts', 'https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600|Palanquin:300', false );
 }
-
 add_action( 'wp_enqueue_scripts', 'trick_add_google_fonts' );
 
-// add another google font to GeneratePress menu
-add_filter( 'generate_typography_default_fonts','trick_add_system_fonts' );
-function trick_add_system_fonts( $fonts ) {
-    $fonts[] = 'Palanquin Dark';
+// limit number and add google fonts to GeneratePress menu
+add_filter( 'generate_number_of_fonts','trick_show_trickonly_google_fonts' );
+function trick_show_trickonly_google_fonts() {
+    return 2;
+}
+
+add_filter( 'generate_typography_customize_list','trick_add_to_customizer' );
+function trick_add_to_customizer( $fonts )
+{
+    $fonts[ 'palanquin_dark' ] = array( 'name' => 'Palanquin Dark' );
+    $fonts[ 'palanquin' ] = array( 'name' => 'Palanquin' );
+
     return $fonts;
 }
 
