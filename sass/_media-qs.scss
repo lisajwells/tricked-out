@@ -1,4 +1,12 @@
 
+@media (max-width: 1400px) {
+
+    .front-page-portrait img {
+        position: absolute;
+        left: -5%;
+    }
+}
+
 @media (max-width: 1024px) {
 
     .main-navigation .main-nav ul li a {
@@ -94,6 +102,15 @@
     }
     .main-navigation .main-nav li:last-child a {
         border-right: none;
+    }
+
+    .front-page-portrait {
+        display: none;
+    }
+
+    .home #main {
+        width: 100%;
+        float: none;
     }
 
 

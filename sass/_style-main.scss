@@ -89,14 +89,6 @@ body {
 @supports(position:sticky){
   .front-page-portrait {
     position: sticky;
-    top: -3px;
-    z-index: -1;
-    max-height: 10px;
-
-    img {
-      width: 40%;
-      // max-height: calc(105vh - 193px);
-    }
   }
 }
 
