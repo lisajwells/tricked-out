@@ -148,8 +148,18 @@ blockquote {
     background-image: none !important;
 }
 
+/****** FOOTER ******/
+
+.site-info {
+    @include font-size(13);
+}
+
 /****** ALL PAGES ******/
 
 .separate-containers .inside-article {
   background: transparent;
+}
+
+i.fa.fa-angle-up {
+    color: $colorBrightThree-lighter;
 }
