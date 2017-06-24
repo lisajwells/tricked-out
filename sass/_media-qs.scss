@@ -54,6 +54,7 @@
     .main-navigation ul {
         display: block;
     }
+    ////
 }
 
 @media (max-width: 600px) {
@@ -78,6 +79,21 @@
 
     .site-logo {
         max-width: 102px;
+        margin-bottom: .5em !important;
+    }
+
+    .main-navigation .main-nav li {
+        display: inline-block !important;
+    }
+
+    .main-navigation .main-nav ul li a {
+        border-right: $colorBrightThree solid 1px;
+        line-height: 1.2;
+        @include font-size(14);
+
+    }
+    .main-navigation .main-nav li:last-child a {
+        border-right: none;
     }
 
 
