@@ -1,0 +1,10 @@
+// disable hamburger. we don't need it.
+@media (max-width: 768px) {
+    .main-navigation .menu-toggle {
+        display: none;
+    }
+    .main-navigation ul {
+        display: block;
+    }
+}
+
