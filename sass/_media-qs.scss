@@ -1,5 +1,53 @@
-// disable hamburger. we don't need it.
+
+@media (max-width: 1024px) {
+
+    .main-navigation .main-nav ul li a {
+        @include font-size(15);
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .nav-float-right .inside-header .main-navigation {
+        margin-left: -14px;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .inside-header {
+        padding: 18px 40px;
+        align-items: center;
+    }
+
+    .inside-header>:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .main-title {
+        @include font-size(26);
+    }
+
+    .site-description {
+        @include font-size(20);
+    }
+
+    .site-logo {
+        max-width: 120px;
+        margin: 0 1em;
+    }
+
+    .nav-float-right .inside-header .main-navigation {
+        margin-left: -7px;
+    }
+
+    .main-navigation .main-nav ul li a {
+        font-size: 16px;
+        font-size: 1rem;
+        border-right: none;
+        line-height: 2.2;
+    }
+
+    // disable hamburger. we don't need it.
     .main-navigation .menu-toggle {
         display: none;
     }
@@ -8,3 +56,42 @@
     }
 }
 
+@media (max-width: 600px) {
+
+    .inside-header {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .inside-header .site-branding {
+        text-align: center;
+        margin-bottom: .6em;
+    }
+
+    .main-title {
+        @include font-size(22);
+    }
+
+    .site-description {
+        @include font-size(20);
+    }
+
+    .site-logo {
+        max-width: 102px;
+    }
+
+
+
+}
+
+
+// GeneratePress breakpoints
+// @media (max-width: 768px) {
+    /* CSS in here for mobile only */
+// }
+// @media (min-width: 769px) and (max-width: 1024px) {
+    /* CSS in here for tablet only */
+// }
+// @media (min-width: 1025px) {
+    /* CSS in here for desktop only */
+// }
