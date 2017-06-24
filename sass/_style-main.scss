@@ -141,7 +141,15 @@ blockquote {
     visibility: visible !important;
 }
 
-
+// remove gradient on lightbox toolbar and move up
+#envirabox-buttons ul {
+    margin: 0 auto 40px !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow:  none;
+    background: #222222;
+    background-image: none !important;
+}
 
 /****** ALL PAGES ******/
 
