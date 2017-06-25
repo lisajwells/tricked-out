@@ -34,7 +34,7 @@ body {
 
 .site-branding {
     text-align: right;
-    flex: 1 0;
+    flex: 1 1 40%;
 }
 
 .main-title {
@@ -51,13 +51,13 @@ body {
 .site-logo {
     max-width: 160px;
     margin: 0 1.8em;
-    flex: 1 0 20%;
+    flex: 0 0 20%;
 }
 
 .nav-float-right .inside-header .main-navigation {
     float: none;
     margin: 0;
-    flex: 1 0;
+    flex: 1 1 40%;
     margin-left: -20px;
 }
 
