@@ -8,6 +8,8 @@
 
 @media (max-width: 1024px) {
 
+    /****** HEADER     ******/
+
     .main-navigation .main-nav ul li a {
         @include font-size(15);
         padding-left: 8px;
@@ -21,6 +23,8 @@
 
 @media (max-width: 768px) {
 
+    /****** HEADER     ******/
+
     .inside-header {
         padding: 18px 40px;
         align-items: center;
@@ -29,10 +33,6 @@
     .inside-header>:not(:last-child) {
         margin-bottom: 0;
     }
-
-    // .site-branding {
-    //     margin-bottom: 0;
-    // }
 
     .main-title {
         @include font-size(26);
@@ -67,14 +67,38 @@
     }
     ////
 
+    /****** FRONT-PAGE ******/
+
     blockquote {
         @include font-size(18);
     }
 
+    /****** FOOTER     ******/
+
+    #text-2 .textwidget {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer1-text {
+        flex: 1 1 auto;
+        align-self: flex-start;
+    }
+
+    .footer1-button.tr-button.button {
+        flex: 1 1 auto;
+        align-self: flex-start;
+        margin: 20px 0 0 0;
+    }
 
 }
 
 @media (max-width: 600px) {
+
+    /****** HEADER     ******/
 
     .inside-header {
         padding: 20px;
@@ -118,6 +142,8 @@
     .main-navigation .main-nav li:last-child a {
         border-right: none;
     }
+
+    /****** FRONT-PAGE ******/
 
     .front-page-portrait {
         display: none;
