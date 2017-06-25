@@ -172,15 +172,14 @@ i.fa.fa-angle-up {
     border-radius: 9px;
     text-transform: uppercase;
 
-    &:hover {
-        background-color: $colorBrightThree;
-    }
+        &:hover {
+            background-color: $colorBrightThree;
+        }
 
-    a {
-        color: #333333;
-        @include display-semi;
-
-    }
+        a {
+            color: #333333;
+            @include display-semi;
+        }
         &:hover a {
             color: $colorBrightTwo;
         }
