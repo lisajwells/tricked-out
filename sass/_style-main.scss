@@ -156,6 +156,26 @@ blockquote {
     @include font-size(13);
 }
 
+#text-2 .textwidget {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-start;
+}
+
+.footer1-text {
+    flex: 1 1 auto;
+    align-self: auto;
+}
+
+.footer1-button.tr-button.button {
+    flex: 0 0 auto;
+    align-self: flex-end;
+    margin: 10px 0 6px 20px;
+}
+
 /****** ALL PAGES ******/
 
 .separate-containers .inside-article {
