@@ -32,9 +32,9 @@ body {
     padding: 24px 40px;
 }
 
-.site-branding {
+.site-branding { // flex-item
     text-align: right;
-    flex: 1 0;
+    flex: 1 1 40%;
 }
 
 .main-title {
@@ -48,16 +48,16 @@ body {
     margin-top: 0.3em;
 }
 
-.site-logo {
+.site-logo { // flex-item
     max-width: 160px;
     margin: 0 1.8em;
-    flex: 1 0 20%;
+    flex: 0 0 auto;
 }
 
-.nav-float-right .inside-header .main-navigation {
+.nav-float-right .inside-header .main-navigation { // flex-item
     float: none;
     margin: 0;
-    flex: 1 0;
+    flex: 1 1 40%;
     margin-left: -20px;
 }
 
