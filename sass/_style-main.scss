@@ -2,9 +2,10 @@
 >>> TABLE OF CONTENTS:
 ----------------------*/
 
-/****** HEADER ******/
+/****** HEADER     ******/
 /****** FRONT-PAGE ******/
-/****** ALL PAGES ******/
+/****** FOOTER     ******/
+/****** ALL PAGES  ******/
 
 /*--------------------*/
 
@@ -25,6 +26,7 @@ body {
 
 .inside-header {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     padding: 24px 40px;
@@ -162,4 +164,16 @@ blockquote {
 
 i.fa.fa-angle-up {
     color: $colorBrightThree-lighter;
+}
+
+.button {
+    background-color: $colorBrightOne;
+    border: 2px solid $colorBrightTwo;
+    border-radius: 9px;
+    text-transform: uppercase;
+
+    a {
+        color: #333333;
+        @include display-semi;
+    }
 }

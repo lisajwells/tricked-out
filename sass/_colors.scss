@@ -19,6 +19,7 @@ $colorBrightOne: #FF652F;
 $colorBrightOne-lighter: tint($colorBrightOne, 20%);
 $colorBrightTwo: #FFE401;
 $colorBrightTwo-lighter: tint($colorBrightTwo, 50%);
+$colorBrightTwo-darker: shade($colorBrightTwo, 30%);
 $colorBrightThree: #13A76B;
 $colorBrightThree-lighter: tint($colorBrightThree, 20%);
 $colorWhite: #fff;
