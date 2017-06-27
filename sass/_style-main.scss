@@ -179,22 +179,21 @@ article#post-169 {
 
 #text-2 .textwidget {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .footer1-text {
-    flex: 1 1 auto;
-    align-self: auto;
+    flex: 0 0 auto;
+    text-align: center;
 }
 
 .footer1-button.tr-button.button {
     flex: 0 0 auto;
-    align-self: flex-end;
-    margin: 10px 0 6px 20px;
+    margin: 1em 0 0;
 }
 
 /****** ALL PAGES ******/

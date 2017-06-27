@@ -75,24 +75,29 @@
 
     /****** FOOTER     ******/
 
-    #text-2 .textwidget {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-content: flex-start;
-        align-items: flex-start;
+    .site-info {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .footer1-text {
-        flex: 1 1 auto;
-        align-self: flex-start;
-    }
+    // #text-2 .textwidget {
+    //     flex-direction: column;
+    //     flex-wrap: nowrap;
+    //     justify-content: flex-start;
+    //     align-content: flex-start;
+    //     align-items: flex-start;
+    // }
 
-    .footer1-button.tr-button.button {
-        flex: 1 1 auto;
-        align-self: flex-start;
-        margin: 20px 0 0 0;
-    }
+    // .footer1-text {
+    //     flex: 1 1 auto;
+    //     align-self: flex-start;
+    // }
+
+    // .footer1-button.tr-button.button {
+    //     flex: 1 1 auto;
+    //     align-self: flex-start;
+    //     margin: 20px 0 0 0;
+    // }
 
     /****** ALL PAGES ******/
     .entry-content p img {
