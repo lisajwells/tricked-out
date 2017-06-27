@@ -50,4 +50,13 @@ function trick_front_add_bkgd_img() {
     }
 };
 add_action('generate_after_header', 'trick_front_add_bkgd_img');
-?>
+
+// add background image to contact page
+function trick_contact_add_bkgd_img() {
+
+    if ( is_page( 'Contact') ) {
+        echo '<div class="contact-page-bkgd"><img src="'.get_home_url().'/wp-content/uploads/2017/06/Background-for-Contact.jpg"></div>';
+    }
+};
+add_action('generate_after_header', 'trick_contact_add_bkgd_img');
+
