@@ -86,7 +86,6 @@
         flex: 1 1 100%;
     }
 
-
     /****** FOOTER     ******/
 
     .site-info {
@@ -189,6 +188,12 @@
         width: 100% !important;
     }
 
+    /****** CONTACT PAGE ******/
+
+    .contact-div {
+        margin: 1em;
+        padding: 1em 1.5em .5em;
+    }
 }
 
 @media (max-width: 440px) {
