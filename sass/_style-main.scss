@@ -166,10 +166,27 @@ body.page-id-169 {
     background-repeat: no-repeat;
 }
 
+.page-id-169 .entry-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
 .contact-div {
     background: rgba(34,34,34,.9);
-    margin: 2em;
-    padding: 2em;
+    margin: 1em;
+    padding:  1.5em 2em 1em;
+}
+
+.purchase-text, .contact-div {
+    width: 50%;
+}
+
+.contact-div h3 {
+    margin-bottom: 6px;
 }
 
 /****** FOOTER ******/
@@ -207,7 +224,9 @@ i.fa.fa-angle-up {
     color: $colorBrightThree-lighter;
 }
 
-.button, .footer-widgets .button {
+.button,
+.footer-widgets .button,
+.page .caldera-grid .btn {
     background-color: $colorBrightOne;
     border: 2px solid $colorBrightTwo;
     border-radius: 9px;
