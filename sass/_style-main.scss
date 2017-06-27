@@ -168,6 +168,20 @@ blockquote {
 //     background-repeat: no-repeat;
 // }
 
+.contact-page-bkgd {
+    background-image: url(https://trickedoutimages.com/wp-content/uploads/2017/06/Background-for-Contact.jpg);
+    // background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh + 193px);
+    top: -193px;
+    z-index: -1;
+
+}
+
 .page-id-169 .entry-content {
     display: flex;
     flex-direction: row;
