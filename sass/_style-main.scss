@@ -245,6 +245,12 @@ i.fa.fa-angle-up {
         }
 }
 
+.page .caldera-grid .btn {
+                color: #333333;
+            @include display-semi;
+
+}
+
 .entry-content p img {
     margin: 0.3em 1.5em 1em 0;
 }
