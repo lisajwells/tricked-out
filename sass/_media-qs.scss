@@ -94,6 +94,12 @@
         margin: 20px 0 0 0;
     }
 
+    /****** ALL PAGES ******/
+    .entry-content p img {
+        float: left;
+        max-width: 40%;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -161,12 +167,20 @@
     }
 
     .envira-gallery-wrap .envira-gallery-public.envira-gallery-2-columns .envira-gallery-item {
-    width: 100% !important;
+        width: 100% !important;
+    }
+
 }
 
+@media (max-width: 440px) {
+    .entry-content p img {
+        float: none;
+        max-width: 100%;
+        margin: 0.3em 1.5em 1em 0;
+    }
+
 
 }
-
 
 // GeneratePress breakpoints
 // @media (max-width: 768px) {
