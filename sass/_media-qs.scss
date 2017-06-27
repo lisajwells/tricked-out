@@ -73,6 +73,20 @@
         @include font-size(18);
     }
 
+    /****** CONTACT PAGE ******/
+
+    .page-id-169 .entry-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .purchase-text, .contact-div {
+        flex: 1 1 100%;
+    }
+
+
     /****** FOOTER     ******/
 
     .site-info {

@@ -172,7 +172,6 @@ body.page-id-169 {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-
 }
 
 .contact-div {
@@ -182,7 +181,7 @@ body.page-id-169 {
 }
 
 .purchase-text, .contact-div {
-    width: 50%;
+    flex: 1 1 50%;
 }
 
 .contact-div h3 {
@@ -246,9 +245,12 @@ i.fa.fa-angle-up {
 }
 
 .page .caldera-grid .btn {
-                color: #333333;
-            @include display-semi;
+    color: #333333;
+    @include display-semi;
 
+        &:hover {
+            border: 2px solid $colorBrightTwo;
+        }
 }
 
 .entry-content p img {
