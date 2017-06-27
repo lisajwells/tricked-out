@@ -16,6 +16,7 @@ body {
 
 .separate-containers .inside-article {
   color: $color__text-main;
+  color: #c3c3c3;
 }
 
 /****** HEADER ******/
@@ -112,6 +113,7 @@ blockquote {
   cite {
     font-family: $font__text;
     font-style: normal;
+    font-weight: 300;
   }
 }
 

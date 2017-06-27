@@ -17,8 +17,8 @@ $colorBlack: #000;
 $colorBlackAlmost: #222;
 $colorBrightOne: #FF652F;
 $colorBrightOne-lighter: tint($colorBrightOne, 20%);
-$colorBrightTwo: #FFE401;
-$colorBrightTwo-lighter: tint($colorBrightTwo, 50%);
+$colorBrightTwo: #FFDF53;
+$colorBrightTwo-lighter: tint($colorBrightTwo, 60%);
 $colorBrightTwo-darker: shade($colorBrightTwo, 30%);
 $colorBrightThree: #13A76B;
 $colorBrightThree-lighter: tint($colorBrightThree, 20%);
@@ -27,7 +27,8 @@ $colorGray: #747474;
 
 $color__background-header: $colorBlack;
 $color__background-body: $colorBlackAlmost;
-$color__text-main: $colorBrightTwo-lighter;
+$color__text-main: #c3c3c3;
+// $color__text-main: $colorBrightTwo-lighter;
 $color__text-bright: $colorBrightOne;
 $color__background-footer: $colorBlack;
 
