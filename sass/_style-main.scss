@@ -16,7 +16,6 @@ body {
 
 .separate-containers .inside-article {
   color: $color__text-main;
-  color: #c3c3c3;
 }
 
 /****** HEADER ******/
@@ -150,6 +149,13 @@ blockquote {
     box-shadow:  none;
     background: #222222;
     background-image: none !important;
+}
+
+/****** PERSONAL PAGE ******/
+
+.page-id-167 .inside-article {
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 /****** FOOTER ******/

@@ -54,21 +54,21 @@ $baseline-px: 16px;
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // Clearfix
 @mixin clearfix() {
-	content: "";
-	display: table;
-	table-layout: fixed;
+    content: "";
+    display: table;
+    table-layout: fixed;
 }
 
 // Clear after (not all clearfix need this also)
 @mixin clearfix-after() {
-	clear: both;
+    clear: both;
 }
 
 @mixin linx ($link, $visit, $hover, $active) {
