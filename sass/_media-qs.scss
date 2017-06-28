@@ -122,6 +122,10 @@
 
 @media (max-width: 600px) {
 
+    .body {
+        @include font-size(15);
+    }
+
     /****** HEADER     ******/
 
     .inside-header {
@@ -190,9 +194,13 @@
 
     /****** CONTACT PAGE ******/
 
+    .page-id-169 #main {
+        margin-top: 0;
+    }
+
     .contact-div {
         margin: 1em;
-        padding: 1em 1.5em .5em;
+        padding: .5em .75em .25em;
     }
 }
 
