@@ -204,6 +204,11 @@
     }
 }
 
+@media (max-width: 600px) {
+.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header {
+    padding: 10px;
+}}
+
 @media (max-width: 440px) {
     .entry-content p img {
         float: none;
