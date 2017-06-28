@@ -151,6 +151,16 @@ blockquote {
     background-image: none !important;
 }
 
+// experiment to diaplay galleries instead of album
+
+#envira-gallery-194 .envira-gallery-item {
+    display: none !important;
+}
+
+#envira-gallery-194 .envira-gallery-item:first-of-type {
+    display: block !important;
+}
+
 /****** PERSONAL PAGE ******/
 
 .page-id-167 .inside-article {
