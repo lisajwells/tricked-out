@@ -123,7 +123,11 @@
 @media (max-width: 600px) {
 
     .body {
-        @include font-size(15);
+        @include font-size(14);
+    }
+
+    .page-id-169 .inside-article {
+        padding: 10px;
     }
 
     /****** HEADER     ******/
@@ -203,11 +207,6 @@
         padding: .5em .75em .25em;
     }
 }
-
-@media (max-width: 600px) {
-.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header {
-    padding: 10px;
-}}
 
 @media (max-width: 440px) {
     .entry-content p img {
