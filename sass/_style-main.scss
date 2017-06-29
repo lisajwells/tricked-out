@@ -153,10 +153,12 @@ blockquote {
 
 // experiment to diaplay galleries instead of album
 
+#envira-gallery-193 .envira-gallery-item,
 #envira-gallery-194 .envira-gallery-item {
     display: none !important;
 }
 
+#envira-gallery-193 .envira-gallery-item:first-of-type,
 #envira-gallery-194 .envira-gallery-item:first-of-type {
     display: block !important;
 }
