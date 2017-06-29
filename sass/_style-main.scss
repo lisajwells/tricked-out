@@ -117,12 +117,47 @@ blockquote {
 }
 
 /* Galleries */
-#envira-gallery-186 .envira-album-title {
-  font-family: $font__display;
-  font-weight: 400;
-  color: $colorBrightThree;
-  letter-spacing: 0.5px;
+
+// display galleries instead of album on home page
+
+.envira-gallery-public .envira-gallery-item,
+.envira-gallery-public .envira-gallery-item {
+    display: none !important;
 }
+
+.envira-gallery-public .envira-gallery-item:first-of-type,
+.envira-gallery-public .envira-gallery-item:first-of-type {
+    display: block !important;
+}
+
+.home-galleries-col {
+    width: 47%;
+}
+
+.home-galleries-col1 {
+    float: left;
+}
+
+.home-galleries-col2 {
+    float: right;
+}
+
+.home-galleries-col .envira-gallery-wrap .envira-gallery-public {
+    margin-bottom: 0;
+}
+
+.envira-gallery-description h3 {
+    text-align: center;
+}
+
+// #envira-gallery-186 .envira-album-title {
+//   font-family: $font__display;
+//   font-weight: 400;
+//   color: $colorBrightThree;
+//   letter-spacing: 0.5px;
+// }
+
+// lightbox
 
 .envirabox-overlay {
     background-image: none !important;
@@ -151,25 +186,6 @@ blockquote {
     background-image: none !important;
 }
 
-// experiment to display galleries instead of album
-
-.home-galleries-col .envira-gallery-wrap .envira-gallery-public {
-    margin-bottom: 0;
-}
-
-.envira-gallery-public .envira-gallery-item,
-.envira-gallery-public .envira-gallery-item {
-    display: none !important;
-}
-
-.envira-gallery-public .envira-gallery-item:first-of-type,
-.envira-gallery-public .envira-gallery-item:first-of-type {
-    display: block !important;
-}
-
-.envira-gallery-description h3 {
-    text-align: center;
-}
 
 /****** PERSONAL PAGE ******/
 
