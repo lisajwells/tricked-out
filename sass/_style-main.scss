@@ -151,16 +151,24 @@ blockquote {
     background-image: none !important;
 }
 
-// experiment to diaplay galleries instead of album
+// experiment to display galleries instead of album
 
-#envira-gallery-193 .envira-gallery-item,
-#envira-gallery-194 .envira-gallery-item {
+.home-galleries-col .envira-gallery-wrap .envira-gallery-public {
+    margin-bottom: 0;
+}
+
+.envira-gallery-public .envira-gallery-item,
+.envira-gallery-public .envira-gallery-item {
     display: none !important;
 }
 
-#envira-gallery-193 .envira-gallery-item:first-of-type,
-#envira-gallery-194 .envira-gallery-item:first-of-type {
+.envira-gallery-public .envira-gallery-item:first-of-type,
+.envira-gallery-public .envira-gallery-item:first-of-type {
     display: block !important;
+}
+
+.envira-gallery-description h3 {
+    text-align: center;
 }
 
 /****** PERSONAL PAGE ******/
