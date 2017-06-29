@@ -104,10 +104,11 @@ blockquote {
   @include display-regular;
   border-left: none;
   color: $colorBrightTwo;
+  margin-bottom: 0;
   text-align: right;
   text-shadow: -1px 1px 3px rgba(34, 34, 34, 0.5);
-  padding-left: 3em;
-  padding-top: 0;
+  // padding-left: 3em;
+  padding: 0 5px;
 
   cite {
     font-family: $font__text;
@@ -144,6 +145,7 @@ blockquote {
 
 .home-galleries-col .envira-gallery-wrap .envira-gallery-public {
     margin-bottom: 0;
+    margin-top: 10%;
 }
 
 .envira-gallery-description h3 {
