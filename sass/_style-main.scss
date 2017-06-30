@@ -121,14 +121,28 @@ blockquote {
 
 // display galleries on home page
 
-.envira-gallery-public .envira-gallery-item,
 .envira-gallery-public .envira-gallery-item {
     display: none !important;
 }
+.envira-gallery-public .envira-gallery-item:hover {
+    display: none !important;
+}
 
-.envira-gallery-public .envira-gallery-item:first-of-type,
 .envira-gallery-public .envira-gallery-item:first-of-type {
     display: block !important;
+}
+.envira-gallery-public .envira-gallery-item:first-of-type:hover {
+    // transition: all 200ms ease-in;
+    // transform: scale(1.05);
+}
+
+.envira-gallery-wrap {
+    transition: all .3s ease-in;
+    transform: scale(1);
+}
+.envira-gallery-wrap:hover {
+    transition: all .3s ease-in;
+    transform: scale(1.05);
 }
 
 .home-galleries-col {
