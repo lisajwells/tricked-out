@@ -10,10 +10,21 @@
 // }
 // add_action( 'wp_enqueue_scripts', 'trick_add_google_fonts' );
 
+// don't load all the fontawesome fonts, just what GP needs
 add_filter( 'generate_fontawesome_essentials', 'tu_fontawesome_essentials' );
 function tu_fontawesome_essentials() {
     return true;
 }
+
+// display weight field in GP Customizer
+//add_action('customize_controls_print_styles', 'tu_customize_preview_css');
+//function tu_customize_preview_css() {
+//    ?>
+<!--     <style>
+        .customize-control.customize-control-gp-hidden-input {display: block !important;}
+    </style>
+ -->    <?php
+//}
 
 // limit number and add google fonts to GeneratePress customizer
 add_filter( 'generate_number_of_fonts','trick_show_trickonly_google_fonts' );
@@ -21,6 +32,7 @@ function trick_show_trickonly_google_fonts() {
     return 2;
 }
 
+// add palanquin to GP customizer
 add_filter( 'generate_typography_customize_list','trick_add_to_customizer' );
 function trick_add_to_customizer( $fonts )
 {
@@ -30,7 +42,7 @@ function trick_add_to_customizer( $fonts )
     return $fonts;
 }
 
-// customize the customizer palettes
+// customize the customizer color palettes
 add_filter( 'generate_default_color_palettes', 'trick_custom_color_palettes' );
 function trick_custom_color_palettes( $palettes ) {
     $palettes = array(
