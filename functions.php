@@ -16,16 +16,6 @@ function tu_fontawesome_essentials() {
     return true;
 }
 
-// display weight field in GP Customizer
-//add_action('customize_controls_print_styles', 'tu_customize_preview_css');
-//function tu_customize_preview_css() {
-//    ?>
-<!--     <style>
-        .customize-control.customize-control-gp-hidden-input {display: block !important;}
-    </style>
- -->    <?php
-//}
-
 // limit number and add google fonts to GeneratePress customizer
 add_filter( 'generate_number_of_fonts','trick_show_trickonly_google_fonts' );
 function trick_show_trickonly_google_fonts() {
