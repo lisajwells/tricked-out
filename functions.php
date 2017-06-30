@@ -5,10 +5,15 @@
  * @package Generate
  */
 
-function trick_add_google_fonts() {
-    wp_enqueue_style( 'trick-google-fonts', 'https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600|Palanquin:300', false );
+// function trick_add_google_fonts() {
+//     wp_enqueue_style( 'trick-google-fonts', 'https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600|Palanquin:300', false );
+// }
+// add_action( 'wp_enqueue_scripts', 'trick_add_google_fonts' );
+
+add_filter( 'generate_fontawesome_essentials', 'tu_fontawesome_essentials' );
+function tu_fontawesome_essentials() {
+    return true;
 }
-add_action( 'wp_enqueue_scripts', 'trick_add_google_fonts' );
 
 // limit number and add google fonts to GeneratePress customizer
 add_filter( 'generate_number_of_fonts','trick_show_trickonly_google_fonts' );
